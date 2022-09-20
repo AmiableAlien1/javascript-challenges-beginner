@@ -15,3 +15,12 @@ if (!output) throw "Output container not found.";
 
 //@ts-check
 // your code starts after this line
+
+function printNumbers(start, end) {
+	console.log(start);
+	if (start < end) {
+		printNumbers(start + 2, end);
+	}
+}
+printNumbers(2, 10000);
+
